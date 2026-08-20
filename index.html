@@ -2,45 +2,62 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Gravidade dos Planetas</title>
+  <title>Flashcards de Gravitação</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Gravidade dos Planetas</h1>
-    <p>Conceitos, fórmulas e aplicações</p>
-  </header>
-
-  <section id="conceito">
-    <h2>Conceito Teórico</h2>
-    <p>
-      A gravidade é a força de atração entre dois corpos com massa. 
-      Sua fórmula geral é:
-    </p>
-    <p class="formula">
-      F = G · (m₁ · m₂) / r²
-    </p>
-    <p>
-      Onde:
-      <ul>
-        <li><b>F</b> = força gravitacional</li>
-        <li><b>G</b> = constante gravitacional (6,67 × 10⁻¹¹ N·m²/kg²)</li>
-        <li><b>m₁, m₂</b> = massas dos corpos</li>
-        <li><b>r</b> = distância entre os centros dos corpos</li>
-      </ul>
-    </p>
-    <p>
-      Aplicações: órbitas planetárias, queda livre, peso dos objetos em diferentes planetas.
-    </p>
-  </section>
-
-  <section id="flashcards">
-    <h2>Flashcards</h2>
-    <div class="card-container">
-      <!-- Flashcards serão inseridos via JavaScript -->
-    </div>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      width: 200px;
+      height: 250px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 10px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+      background: #4a90e2;
+      color: #fff;
+    }
+    img {
+      max-width: 100px;
+      margin-top: 10px;
+    }
