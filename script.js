@@ -22,4 +22,31 @@ const flashcards = [
   {
     frente: "Como a gravidade influencia órbitas planetárias?",
     verso: "Ela mantém os planetas em órbita ao redor do Sol.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8 
+    imagem: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg"
+  }
+];
+
+const container = document.querySelector(".card-container");
+
+flashcards.forEach(card => {
+  const cardElement = document.createElement("div");
+  cardElement.classList.add("card");
+
+  cardElement.innerHTML = `
+    <div class="card-inner">
+      <div class="card-front">
+        <p>${card.frente}</p>
+        <img src="${card.imagem}" alt="Imagem relacionada" style="width:120px; margin-top:10px;">
+      </div>
+      <div class="card-back">
+        <p>${card.verso}</p>
+      </div>
+    </div>
+  `;
+
+  cardElement.addEventListener("click", () => {
+    cardElement.classList.toggle("flipped");
+  });
+
+  container.appendChild(cardElement);
+});
