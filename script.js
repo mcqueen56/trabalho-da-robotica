@@ -36,7 +36,7 @@ flashcards.forEach(card => {
     <div class="card-inner">
       <div class="card-front">
         <p>${card.frente}</p>
-        <img src="${card.imagem}" alt="Imagem relacionada" style="width:120px; margin-top:10px;">
+        <img src="${card.imagem}" alt="Imagem relacionada">
       </div>
       <div class="card-back">
         <p>${card.verso}</p>
