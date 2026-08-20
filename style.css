@@ -59,6 +59,8 @@ h1 {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100px;   /* largura máxima */
+  max-height: 100px;  /* altura máxima */
   margin-top: 10px;
+  object-fit: contain; /* mantém proporção sem distorcer */
 }
