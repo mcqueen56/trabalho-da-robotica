@@ -90,21 +90,21 @@ body {
   font-style: italic;
 }
 body {
-  background-color: #0b3d91; /* azul escuro do espaço */
-  color: #e0e0e0; /* texto em cinza claro */
+  background-color: #121212; /* fundo cinza escuro */
+  color: #ffffff; /* texto branco */
   font-family: Arial, sans-serif;
 }
 
 h1, h2 {
-  color: #ffd700; /* títulos em dourado */
+  color: #00bfff; /* títulos em azul celeste */
 }
 
 .card-front p {
-  color: #4b0082; /* roxo para frente */
+  color: #32cd32; /* verde para frente */
   font-weight: bold;
 }
 
 .card-back p {
-  color: #ffd700; /* dourado para verso */
+  color: #ffa500; /* laranja para verso */
   font-style: italic;
 }
