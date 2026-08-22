@@ -74,3 +74,18 @@ h1 {
   border-radius: 6px;
   display: inline-block;
 }
+body {
+  background-color: #f0f8ff; /* azul bem claro */
+  color: #333333; /* cinza escuro para o texto */
+  font-family: Arial, sans-serif;
+}
+
+.card-front p {
+  color: #1a73e8; /* azul Google para frente do card */
+  font-weight: bold;
+}
+
+.card-back p {
+  color: #d93025; /* vermelho para verso do card */
+  font-style: italic;
+}
