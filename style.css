@@ -51,3 +51,26 @@ h1 {
   background: #4a90e2;
   color: #fff;
 }
+#conceito {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+#conceito h2 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+#conceito .formula {
+  font-family: "Courier New", monospace;
+  font-size: 1.2em;
+  background: #eef;
+  padding: 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
