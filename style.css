@@ -90,13 +90,13 @@ body {
   font-style: italic;
 }
 body {
-  background-color: #121212; /* fundo cinza escuro */
+  background-color: #121212; /* fundo escuro */
   color: #ffffff; /* texto branco */
   font-family: Arial, sans-serif;
 }
 
 h1, h2 {
-  color: #00bfff; /* títulos em azul celeste */
+  color: #ffd700; /* títulos em dourado */
 }
 
 .card-front p {
@@ -105,6 +105,6 @@ h1, h2 {
 }
 
 .card-back p {
-  color: #ffa500; /* laranja para verso */
+  color: #00bfff; /* azul celeste para verso */
   font-style: italic;
 }
