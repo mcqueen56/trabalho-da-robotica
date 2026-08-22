@@ -89,3 +89,22 @@ body {
   color: #d93025; /* vermelho para verso do card */
   font-style: italic;
 }
+body {
+  background-color: #0b3d91; /* azul escuro do espaço */
+  color: #e0e0e0; /* texto em cinza claro */
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #ffd700; /* títulos em dourado */
+}
+
+.card-front p {
+  color: #4b0082; /* roxo para frente */
+  font-weight: bold;
+}
+
+.card-back p {
+  color: #ffd700; /* dourado para verso */
+  font-style: italic;
+}
