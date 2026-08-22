@@ -2,7 +2,7 @@ const flashcards = [
   {
     frente: "Qual é a fórmula da força gravitacional?",
     verso: "F = G · (m₁ · m₂) / r²",
-    imagem: "sistema-solar-de-desenho-animado.jpg"
+    imagem: "planetas.jpg"
   },
   {
     frente: "O que acontece com o peso em planetas diferentes?",
